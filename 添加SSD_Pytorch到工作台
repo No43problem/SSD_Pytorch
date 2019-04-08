@@ -1,0 +1,7 @@
+1.git clone url.git
+2.下载Pytorch
+3.使用命令curl -o VOC0712.zip -H'host:p3cl6athz.bkt.clouddn.com' http://iovip.qbox.me/VOC0712.zip下载对应的VOC数据集
+4.在./data/datasets/VOC0712/下分别创建Annoations、ImageSets文件夹，将2007中的test重命名为2007_test.txt 2007和2012中的trainval.txt手动合并然后
+  并命名为0712trainval.txt
+5.执行make.sh之前要把mv nms/cpu_nms.cpython-35m-x86_64-linux-gnu.so nms/cpu_nms.so中cpython-版本号，改成自己的python版本号
+6.
